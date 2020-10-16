@@ -1,0 +1,595 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DED03FAB253A254700E9C759 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED03FAA253A254700E9C759 /* AppDelegate.swift */; };
+		DED03FAD253A254700E9C759 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED03FAC253A254700E9C759 /* SceneDelegate.swift */; };
+		DED03FAF253A254700E9C759 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED03FAE253A254700E9C759 /* ViewController.swift */; };
+		DED03FB2253A254700E9C759 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DED03FB0253A254700E9C759 /* Main.storyboard */; };
+		DED03FB4253A254B00E9C759 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DED03FB3253A254B00E9C759 /* Assets.xcassets */; };
+		DED03FB7253A254B00E9C759 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DED03FB5253A254B00E9C759 /* LaunchScreen.storyboard */; };
+		DED03FC2253A254B00E9C759 /* PixaBay_SearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED03FC1253A254B00E9C759 /* PixaBay_SearchTests.swift */; };
+		DED03FCD253A254C00E9C759 /* PixaBay_SearchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED03FCC253A254C00E9C759 /* PixaBay_SearchUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DED03FBE253A254B00E9C759 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DED03F9F253A254700E9C759 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DED03FA6253A254700E9C759;
+			remoteInfo = "PixaBay Search";
+		};
+		DED03FC9253A254C00E9C759 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DED03F9F253A254700E9C759 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DED03FA6253A254700E9C759;
+			remoteInfo = "PixaBay Search";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DED03FA7253A254700E9C759 /* PixaBay Search.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PixaBay Search.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DED03FAA253A254700E9C759 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DED03FAC253A254700E9C759 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		DED03FAE253A254700E9C759 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DED03FB1253A254700E9C759 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DED03FB3253A254B00E9C759 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DED03FB6253A254B00E9C759 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DED03FB8253A254B00E9C759 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DED03FBD253A254B00E9C759 /* PixaBay SearchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PixaBay SearchTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DED03FC1253A254B00E9C759 /* PixaBay_SearchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PixaBay_SearchTests.swift; sourceTree = "<group>"; };
+		DED03FC3253A254B00E9C759 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DED03FC8253A254C00E9C759 /* PixaBay SearchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PixaBay SearchUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DED03FCC253A254C00E9C759 /* PixaBay_SearchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PixaBay_SearchUITests.swift; sourceTree = "<group>"; };
+		DED03FCE253A254C00E9C759 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DED03FA4253A254700E9C759 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DED03FBA253A254B00E9C759 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DED03FC5253A254C00E9C759 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DED03F9E253A254700E9C759 = {
+			isa = PBXGroup;
+			children = (
+				DED03FA9253A254700E9C759 /* PixaBay Search */,
+				DED03FC0253A254B00E9C759 /* PixaBay SearchTests */,
+				DED03FCB253A254C00E9C759 /* PixaBay SearchUITests */,
+				DED03FA8253A254700E9C759 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DED03FA8253A254700E9C759 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DED03FA7253A254700E9C759 /* PixaBay Search.app */,
+				DED03FBD253A254B00E9C759 /* PixaBay SearchTests.xctest */,
+				DED03FC8253A254C00E9C759 /* PixaBay SearchUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DED03FA9253A254700E9C759 /* PixaBay Search */ = {
+			isa = PBXGroup;
+			children = (
+				DED03FAA253A254700E9C759 /* AppDelegate.swift */,
+				DED03FAC253A254700E9C759 /* SceneDelegate.swift */,
+				DED03FAE253A254700E9C759 /* ViewController.swift */,
+				DED03FB0253A254700E9C759 /* Main.storyboard */,
+				DED03FB3253A254B00E9C759 /* Assets.xcassets */,
+				DED03FB5253A254B00E9C759 /* LaunchScreen.storyboard */,
+				DED03FB8253A254B00E9C759 /* Info.plist */,
+			);
+			path = "PixaBay Search";
+			sourceTree = "<group>";
+		};
+		DED03FC0253A254B00E9C759 /* PixaBay SearchTests */ = {
+			isa = PBXGroup;
+			children = (
+				DED03FC1253A254B00E9C759 /* PixaBay_SearchTests.swift */,
+				DED03FC3253A254B00E9C759 /* Info.plist */,
+			);
+			path = "PixaBay SearchTests";
+			sourceTree = "<group>";
+		};
+		DED03FCB253A254C00E9C759 /* PixaBay SearchUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DED03FCC253A254C00E9C759 /* PixaBay_SearchUITests.swift */,
+				DED03FCE253A254C00E9C759 /* Info.plist */,
+			);
+			path = "PixaBay SearchUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DED03FA6253A254700E9C759 /* PixaBay Search */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DED03FD1253A254C00E9C759 /* Build configuration list for PBXNativeTarget "PixaBay Search" */;
+			buildPhases = (
+				DED03FA3253A254700E9C759 /* Sources */,
+				DED03FA4253A254700E9C759 /* Frameworks */,
+				DED03FA5253A254700E9C759 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "PixaBay Search";
+			productName = "PixaBay Search";
+			productReference = DED03FA7253A254700E9C759 /* PixaBay Search.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DED03FBC253A254B00E9C759 /* PixaBay SearchTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DED03FD4253A254C00E9C759 /* Build configuration list for PBXNativeTarget "PixaBay SearchTests" */;
+			buildPhases = (
+				DED03FB9253A254B00E9C759 /* Sources */,
+				DED03FBA253A254B00E9C759 /* Frameworks */,
+				DED03FBB253A254B00E9C759 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DED03FBF253A254B00E9C759 /* PBXTargetDependency */,
+			);
+			name = "PixaBay SearchTests";
+			productName = "PixaBay SearchTests";
+			productReference = DED03FBD253A254B00E9C759 /* PixaBay SearchTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DED03FC7253A254C00E9C759 /* PixaBay SearchUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DED03FD7253A254C00E9C759 /* Build configuration list for PBXNativeTarget "PixaBay SearchUITests" */;
+			buildPhases = (
+				DED03FC4253A254C00E9C759 /* Sources */,
+				DED03FC5253A254C00E9C759 /* Frameworks */,
+				DED03FC6253A254C00E9C759 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DED03FCA253A254C00E9C759 /* PBXTargetDependency */,
+			);
+			name = "PixaBay SearchUITests";
+			productName = "PixaBay SearchUITests";
+			productReference = DED03FC8253A254C00E9C759 /* PixaBay SearchUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DED03F9F253A254700E9C759 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = mackbook;
+				TargetAttributes = {
+					DED03FA6253A254700E9C759 = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+					DED03FBC253A254B00E9C759 = {
+						CreatedOnToolsVersion = 11.2.1;
+						TestTargetID = DED03FA6253A254700E9C759;
+					};
+					DED03FC7253A254C00E9C759 = {
+						CreatedOnToolsVersion = 11.2.1;
+						TestTargetID = DED03FA6253A254700E9C759;
+					};
+				};
+			};
+			buildConfigurationList = DED03FA2253A254700E9C759 /* Build configuration list for PBXProject "PixaBay Search" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DED03F9E253A254700E9C759;
+			productRefGroup = DED03FA8253A254700E9C759 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DED03FA6253A254700E9C759 /* PixaBay Search */,
+				DED03FBC253A254B00E9C759 /* PixaBay SearchTests */,
+				DED03FC7253A254C00E9C759 /* PixaBay SearchUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DED03FA5253A254700E9C759 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DED03FB7253A254B00E9C759 /* LaunchScreen.storyboard in Resources */,
+				DED03FB4253A254B00E9C759 /* Assets.xcassets in Resources */,
+				DED03FB2253A254700E9C759 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DED03FBB253A254B00E9C759 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DED03FC6253A254C00E9C759 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DED03FA3253A254700E9C759 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DED03FAF253A254700E9C759 /* ViewController.swift in Sources */,
+				DED03FAB253A254700E9C759 /* AppDelegate.swift in Sources */,
+				DED03FAD253A254700E9C759 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DED03FB9253A254B00E9C759 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DED03FC2253A254B00E9C759 /* PixaBay_SearchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DED03FC4253A254C00E9C759 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DED03FCD253A254C00E9C759 /* PixaBay_SearchUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DED03FBF253A254B00E9C759 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DED03FA6253A254700E9C759 /* PixaBay Search */;
+			targetProxy = DED03FBE253A254B00E9C759 /* PBXContainerItemProxy */;
+		};
+		DED03FCA253A254C00E9C759 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DED03FA6253A254700E9C759 /* PixaBay Search */;
+			targetProxy = DED03FC9253A254C00E9C759 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DED03FB0253A254700E9C759 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DED03FB1253A254700E9C759 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DED03FB5253A254B00E9C759 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DED03FB6253A254B00E9C759 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DED03FCF253A254C00E9C759 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DED03FD0253A254C00E9C759 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DED03FD2253A254C00E9C759 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 83XZ7G7GXF;
+				INFOPLIST_FILE = "PixaBay Search/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mackbook.TestApp.PixaBay-Search";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DED03FD3253A254C00E9C759 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 83XZ7G7GXF;
+				INFOPLIST_FILE = "PixaBay Search/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mackbook.TestApp.PixaBay-Search";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DED03FD5253A254C00E9C759 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 83XZ7G7GXF;
+				INFOPLIST_FILE = "PixaBay SearchTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mackbook.TestApp.PixaBay-SearchTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PixaBay Search.app/PixaBay Search";
+			};
+			name = Debug;
+		};
+		DED03FD6253A254C00E9C759 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 83XZ7G7GXF;
+				INFOPLIST_FILE = "PixaBay SearchTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mackbook.TestApp.PixaBay-SearchTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PixaBay Search.app/PixaBay Search";
+			};
+			name = Release;
+		};
+		DED03FD8253A254C00E9C759 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 83XZ7G7GXF;
+				INFOPLIST_FILE = "PixaBay SearchUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mackbook.TestApp.PixaBay-SearchUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "PixaBay Search";
+			};
+			name = Debug;
+		};
+		DED03FD9253A254C00E9C759 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 83XZ7G7GXF;
+				INFOPLIST_FILE = "PixaBay SearchUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mackbook.TestApp.PixaBay-SearchUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "PixaBay Search";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DED03FA2253A254700E9C759 /* Build configuration list for PBXProject "PixaBay Search" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DED03FCF253A254C00E9C759 /* Debug */,
+				DED03FD0253A254C00E9C759 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DED03FD1253A254C00E9C759 /* Build configuration list for PBXNativeTarget "PixaBay Search" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DED03FD2253A254C00E9C759 /* Debug */,
+				DED03FD3253A254C00E9C759 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DED03FD4253A254C00E9C759 /* Build configuration list for PBXNativeTarget "PixaBay SearchTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DED03FD5253A254C00E9C759 /* Debug */,
+				DED03FD6253A254C00E9C759 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DED03FD7253A254C00E9C759 /* Build configuration list for PBXNativeTarget "PixaBay SearchUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DED03FD8253A254C00E9C759 /* Debug */,
+				DED03FD9253A254C00E9C759 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DED03F9F253A254700E9C759 /* Project object */;
+}
