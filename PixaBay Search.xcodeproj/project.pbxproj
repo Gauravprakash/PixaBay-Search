@@ -15,6 +15,8 @@
 		DED03FB7253A254B00E9C759 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DED03FB5253A254B00E9C759 /* LaunchScreen.storyboard */; };
 		DED03FC2253A254B00E9C759 /* PixaBay_SearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED03FC1253A254B00E9C759 /* PixaBay_SearchTests.swift */; };
 		DED03FCD253A254C00E9C759 /* PixaBay_SearchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED03FCC253A254C00E9C759 /* PixaBay_SearchUITests.swift */; };
+		DED03FDD253A261C00E9C759 /* UICollectionView+Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED03FDB253A261B00E9C759 /* UICollectionView+Reusable.swift */; };
+		DED03FDE253A261C00E9C759 /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED03FDC253A261B00E9C759 /* Reusable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		DED03FC8253A254C00E9C759 /* PixaBay SearchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PixaBay SearchUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DED03FCC253A254C00E9C759 /* PixaBay_SearchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PixaBay_SearchUITests.swift; sourceTree = "<group>"; };
 		DED03FCE253A254C00E9C759 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DED03FDB253A261B00E9C759 /* UICollectionView+Reusable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Reusable.swift"; sourceTree = "<group>"; };
+		DED03FDC253A261B00E9C759 /* Reusable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,7 @@
 		DED03FA9253A254700E9C759 /* PixaBay Search */ = {
 			isa = PBXGroup;
 			children = (
+				DED03FDA253A261B00E9C759 /* Protocols */,
 				DED03FAA253A254700E9C759 /* AppDelegate.swift */,
 				DED03FAC253A254700E9C759 /* SceneDelegate.swift */,
 				DED03FAE253A254700E9C759 /* ViewController.swift */,
@@ -126,6 +131,15 @@
 				DED03FCE253A254C00E9C759 /* Info.plist */,
 			);
 			path = "PixaBay SearchUITests";
+			sourceTree = "<group>";
+		};
+		DED03FDA253A261B00E9C759 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				DED03FDB253A261B00E9C759 /* UICollectionView+Reusable.swift */,
+				DED03FDC253A261B00E9C759 /* Reusable.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,8 +274,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				DED03FAF253A254700E9C759 /* ViewController.swift in Sources */,
+				DED03FDD253A261C00E9C759 /* UICollectionView+Reusable.swift in Sources */,
 				DED03FAB253A254700E9C759 /* AppDelegate.swift in Sources */,
 				DED03FAD253A254700E9C759 /* SceneDelegate.swift in Sources */,
+				DED03FDE253A261C00E9C759 /* Reusable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
