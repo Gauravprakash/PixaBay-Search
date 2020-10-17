@@ -34,6 +34,6 @@ enum Constants {
 //MARK: NetworkAPI Constants
 
 enum APIConstants {
-    static let pixabayAPIBaseURL = "https://pixabay.com/"
+    static let pixabayAPIBaseURL = "https://pixabay.com"
     static let pixabayAPIKey = "18736040-e0337fec92b6072683b791811"
 }

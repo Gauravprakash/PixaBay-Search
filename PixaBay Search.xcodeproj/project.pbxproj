@@ -19,10 +19,26 @@
 		DE084603253A954000D245F5 /* APIEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0845FE253A954000D245F5 /* APIEndPoint.swift */; };
 		DE084604253A954000D245F5 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0845FF253A954000D245F5 /* NetworkError.swift */; };
 		DE084607253A96B600D245F5 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE084606253A96B600D245F5 /* Constants.swift */; };
-		DED03FAB253A254700E9C759 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED03FAA253A254700E9C759 /* AppDelegate.swift */; };
-		DED03FAD253A254700E9C759 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED03FAC253A254700E9C759 /* SceneDelegate.swift */; };
-		DED03FAF253A254700E9C759 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED03FAE253A254700E9C759 /* ViewController.swift */; };
-		DED03FB2253A254700E9C759 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DED03FB0253A254700E9C759 /* Main.storyboard */; };
+		DE08461A253AA22700D245F5 /* PixaBaySearchInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE08460B253AA22700D245F5 /* PixaBaySearchInteractor.swift */; };
+		DE08461B253AA22700D245F5 /* PixaBaySearchProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE08460D253AA22700D245F5 /* PixaBaySearchProtocols.swift */; };
+		DE08461C253AA22700D245F5 /* PixaBaySearchRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE08460F253AA22700D245F5 /* PixaBaySearchRouter.swift */; };
+		DE08461D253AA22700D245F5 /* PixaBaySearchModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE084611253AA22700D245F5 /* PixaBaySearchModuleBuilder.swift */; };
+		DE08461E253AA22700D245F5 /* PixaBaySearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE084613253AA22700D245F5 /* PixaBaySearchViewModel.swift */; };
+		DE08461F253AA22700D245F5 /* PixaBaySearchPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE084614253AA22700D245F5 /* PixaBaySearchPresenter.swift */; };
+		DE084620253AA22700D245F5 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE084616253AA22700D245F5 /* SearchViewController.swift */; };
+		DE084621253AA22700D245F5 /* PixaBaySearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE084617253AA22700D245F5 /* PixaBaySearchViewController.swift */; };
+		DE084622253AA22700D245F5 /* FooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE084618253AA22700D245F5 /* FooterView.swift */; };
+		DE084623253AA22700D245F5 /* PixaBayImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE084619253AA22700D245F5 /* PixaBayImageCell.swift */; };
+		DE084627253AA29900D245F5 /* PixaBayPhotos.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE084625253AA29900D245F5 /* PixaBayPhotos.swift */; };
+		DE084628253AA29900D245F5 /* PixaBayPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE084626253AA29900D245F5 /* PixaBayPhoto.swift */; };
+		DE08462C253AB5F900D245F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE08462A253AB5F900D245F5 /* AppDelegate.swift */; };
+		DE08462D253AB5F900D245F5 /* AppConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE08462B253AB5F900D245F5 /* AppConfigurator.swift */; };
+		DE667DC0253AF2F70041709A /* PixaBayPhotoDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE667DB5253AF2F50041709A /* PixaBayPhotoDetailRouter.swift */; };
+		DE667DC1253AF2F80041709A /* PixaBayPhotoDetailProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE667DB7253AF2F60041709A /* PixaBayPhotoDetailProtocols.swift */; };
+		DE667DC2253AF2F80041709A /* PixaBayDetailModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE667DB9253AF2F60041709A /* PixaBayDetailModuleBuilder.swift */; };
+		DE667DC3253AF2F80041709A /* PixabayPhotoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE667DBB253AF2F60041709A /* PixabayPhotoDetailViewController.swift */; };
+		DE667DC4253AF2F80041709A /* PixaBayPhotoDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE667DBD253AF2F70041709A /* PixaBayPhotoDetailPresenter.swift */; };
+		DE667DC5253AF2F80041709A /* PixaBayPhotoDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE667DBF253AF2F70041709A /* PixaBayPhotoDetailInteractor.swift */; };
 		DED03FB4253A254B00E9C759 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DED03FB3253A254B00E9C759 /* Assets.xcassets */; };
 		DED03FB7253A254B00E9C759 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DED03FB5253A254B00E9C759 /* LaunchScreen.storyboard */; };
 		DED03FC2253A254B00E9C759 /* PixaBay_SearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED03FC1253A254B00E9C759 /* PixaBay_SearchTests.swift */; };
@@ -61,11 +77,27 @@
 		DE0845FE253A954000D245F5 /* APIEndPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIEndPoint.swift; sourceTree = "<group>"; };
 		DE0845FF253A954000D245F5 /* NetworkError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		DE084606253A96B600D245F5 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		DE08460B253AA22700D245F5 /* PixaBaySearchInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PixaBaySearchInteractor.swift; sourceTree = "<group>"; };
+		DE08460D253AA22700D245F5 /* PixaBaySearchProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PixaBaySearchProtocols.swift; sourceTree = "<group>"; };
+		DE08460F253AA22700D245F5 /* PixaBaySearchRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PixaBaySearchRouter.swift; sourceTree = "<group>"; };
+		DE084611253AA22700D245F5 /* PixaBaySearchModuleBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PixaBaySearchModuleBuilder.swift; sourceTree = "<group>"; };
+		DE084613253AA22700D245F5 /* PixaBaySearchViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PixaBaySearchViewModel.swift; sourceTree = "<group>"; };
+		DE084614253AA22700D245F5 /* PixaBaySearchPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PixaBaySearchPresenter.swift; sourceTree = "<group>"; };
+		DE084616253AA22700D245F5 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		DE084617253AA22700D245F5 /* PixaBaySearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PixaBaySearchViewController.swift; sourceTree = "<group>"; };
+		DE084618253AA22700D245F5 /* FooterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FooterView.swift; sourceTree = "<group>"; };
+		DE084619253AA22700D245F5 /* PixaBayImageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PixaBayImageCell.swift; sourceTree = "<group>"; };
+		DE084625253AA29900D245F5 /* PixaBayPhotos.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PixaBayPhotos.swift; sourceTree = "<group>"; };
+		DE084626253AA29900D245F5 /* PixaBayPhoto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PixaBayPhoto.swift; sourceTree = "<group>"; };
+		DE08462A253AB5F900D245F5 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DE08462B253AB5F900D245F5 /* AppConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConfigurator.swift; sourceTree = "<group>"; };
+		DE667DB5253AF2F50041709A /* PixaBayPhotoDetailRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PixaBayPhotoDetailRouter.swift; sourceTree = "<group>"; };
+		DE667DB7253AF2F60041709A /* PixaBayPhotoDetailProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PixaBayPhotoDetailProtocols.swift; sourceTree = "<group>"; };
+		DE667DB9253AF2F60041709A /* PixaBayDetailModuleBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PixaBayDetailModuleBuilder.swift; sourceTree = "<group>"; };
+		DE667DBB253AF2F60041709A /* PixabayPhotoDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PixabayPhotoDetailViewController.swift; sourceTree = "<group>"; };
+		DE667DBD253AF2F70041709A /* PixaBayPhotoDetailPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PixaBayPhotoDetailPresenter.swift; sourceTree = "<group>"; };
+		DE667DBF253AF2F70041709A /* PixaBayPhotoDetailInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PixaBayPhotoDetailInteractor.swift; sourceTree = "<group>"; };
 		DED03FA7253A254700E9C759 /* PixaBay Search.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PixaBay Search.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		DED03FAA253A254700E9C759 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DED03FAC253A254700E9C759 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DED03FAE253A254700E9C759 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		DED03FB1253A254700E9C759 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DED03FB3253A254B00E9C759 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DED03FB6253A254B00E9C759 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DED03FB8253A254B00E9C759 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -157,6 +189,7 @@
 			isa = PBXGroup;
 			children = (
 				DE084609253A9DEE00D245F5 /* PixaBay Search */,
+				DE667DB3253AF29D0041709A /* PixaBay Photo Detail */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -164,8 +197,146 @@
 		DE084609253A9DEE00D245F5 /* PixaBay Search */ = {
 			isa = PBXGroup;
 			children = (
+				DE084624253AA29900D245F5 /* Entity */,
+				DE084610253AA22700D245F5 /* Builder */,
+				DE08460A253AA22700D245F5 /* Interactor */,
+				DE084612253AA22700D245F5 /* Presenter */,
+				DE08460C253AA22700D245F5 /* Protocols */,
+				DE08460E253AA22700D245F5 /* Router */,
+				DE084615253AA22700D245F5 /* View */,
 			);
 			path = "PixaBay Search";
+			sourceTree = "<group>";
+		};
+		DE08460A253AA22700D245F5 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				DE08460B253AA22700D245F5 /* PixaBaySearchInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		DE08460C253AA22700D245F5 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				DE08460D253AA22700D245F5 /* PixaBaySearchProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		DE08460E253AA22700D245F5 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				DE08460F253AA22700D245F5 /* PixaBaySearchRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		DE084610253AA22700D245F5 /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				DE084611253AA22700D245F5 /* PixaBaySearchModuleBuilder.swift */,
+			);
+			path = Builder;
+			sourceTree = "<group>";
+		};
+		DE084612253AA22700D245F5 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				DE084613253AA22700D245F5 /* PixaBaySearchViewModel.swift */,
+				DE084614253AA22700D245F5 /* PixaBaySearchPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		DE084615253AA22700D245F5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DE084616253AA22700D245F5 /* SearchViewController.swift */,
+				DE084617253AA22700D245F5 /* PixaBaySearchViewController.swift */,
+				DE084618253AA22700D245F5 /* FooterView.swift */,
+				DE084619253AA22700D245F5 /* PixaBayImageCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DE084624253AA29900D245F5 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				DE084625253AA29900D245F5 /* PixaBayPhotos.swift */,
+				DE084626253AA29900D245F5 /* PixaBayPhoto.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		DE084629253AB5F900D245F5 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				DE08462A253AB5F900D245F5 /* AppDelegate.swift */,
+				DE08462B253AB5F900D245F5 /* AppConfigurator.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		DE667DB3253AF29D0041709A /* PixaBay Photo Detail */ = {
+			isa = PBXGroup;
+			children = (
+				DE667DB8253AF2F60041709A /* Builder */,
+				DE667DBE253AF2F70041709A /* Interactor */,
+				DE667DBC253AF2F70041709A /* Presenter */,
+				DE667DB6253AF2F60041709A /* Protocols */,
+				DE667DB4253AF2F50041709A /* Router */,
+				DE667DBA253AF2F60041709A /* View */,
+			);
+			path = "PixaBay Photo Detail";
+			sourceTree = "<group>";
+		};
+		DE667DB4253AF2F50041709A /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				DE667DB5253AF2F50041709A /* PixaBayPhotoDetailRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		DE667DB6253AF2F60041709A /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				DE667DB7253AF2F60041709A /* PixaBayPhotoDetailProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		DE667DB8253AF2F60041709A /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				DE667DB9253AF2F60041709A /* PixaBayDetailModuleBuilder.swift */,
+			);
+			path = Builder;
+			sourceTree = "<group>";
+		};
+		DE667DBA253AF2F60041709A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DE667DBB253AF2F60041709A /* PixabayPhotoDetailViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DE667DBC253AF2F70041709A /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				DE667DBD253AF2F70041709A /* PixaBayPhotoDetailPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		DE667DBE253AF2F70041709A /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				DE667DBF253AF2F70041709A /* PixaBayPhotoDetailInteractor.swift */,
+			);
+			path = Interactor;
 			sourceTree = "<group>";
 		};
 		DED03F9E253A254700E9C759 = {
@@ -191,6 +362,7 @@
 		DED03FA9253A254700E9C759 /* PixaBay Search */ = {
 			isa = PBXGroup;
 			children = (
+				DE084629253AB5F900D245F5 /* Application */,
 				DE084608253A9DE100D245F5 /* Modules */,
 				DED03FB8253A254B00E9C759 /* Info.plist */,
 				DE084605253A96B600D245F5 /* Constants */,
@@ -198,10 +370,6 @@
 				DE0845EB253A929600D245F5 /* Resources */,
 				DE0845E2253A925600D245F5 /* Extensions */,
 				DED03FDA253A261B00E9C759 /* Protocols */,
-				DED03FAA253A254700E9C759 /* AppDelegate.swift */,
-				DED03FAC253A254700E9C759 /* SceneDelegate.swift */,
-				DED03FAE253A254700E9C759 /* ViewController.swift */,
-				DED03FB0253A254700E9C759 /* Main.storyboard */,
 				DE0845FA253A954000D245F5 /* Networking */,
 			);
 			path = "PixaBay Search";
@@ -340,7 +508,6 @@
 			files = (
 				DED03FB7253A254B00E9C759 /* LaunchScreen.storyboard in Resources */,
 				DED03FB4253A254B00E9C759 /* Assets.xcassets in Resources */,
-				DED03FB2253A254700E9C759 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -366,20 +533,37 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE0845E7253A925600D245F5 /* UIImageView+Extensions.swift in Sources */,
+				DE08461C253AA22700D245F5 /* PixaBaySearchRouter.swift in Sources */,
+				DE08461F253AA22700D245F5 /* PixaBaySearchPresenter.swift in Sources */,
 				DE084607253A96B600D245F5 /* Constants.swift in Sources */,
+				DE08461E253AA22700D245F5 /* PixaBaySearchViewModel.swift in Sources */,
+				DE08461B253AA22700D245F5 /* PixaBaySearchProtocols.swift in Sources */,
 				DE084604253A954000D245F5 /* NetworkError.swift in Sources */,
-				DED03FAF253A254700E9C759 /* ViewController.swift in Sources */,
+				DE667DC4253AF2F80041709A /* PixaBayPhotoDetailPresenter.swift in Sources */,
 				DED03FDD253A261C00E9C759 /* UICollectionView+Reusable.swift in Sources */,
+				DE084628253AA29900D245F5 /* PixaBayPhoto.swift in Sources */,
+				DE084627253AA29900D245F5 /* PixaBayPhotos.swift in Sources */,
 				DE0845E8253A925600D245F5 /* UIViewController+Extensions.swift in Sources */,
-				DED03FAB253A254700E9C759 /* AppDelegate.swift in Sources */,
+				DE667DC2253AF2F80041709A /* PixaBayDetailModuleBuilder.swift in Sources */,
+				DE084622253AA22700D245F5 /* FooterView.swift in Sources */,
 				DE084601253A954000D245F5 /* URLRequestConvertible.swift in Sources */,
+				DE667DC5253AF2F80041709A /* PixaBayPhotoDetailInteractor.swift in Sources */,
 				DE0845F8253A94FC00D245F5 /* ImageOperation.swift in Sources */,
 				DE0845F9253A94FC00D245F5 /* ImageDownloader.swift in Sources */,
+				DE084621253AA22700D245F5 /* PixaBaySearchViewController.swift in Sources */,
+				DE08462C253AB5F900D245F5 /* AppDelegate.swift in Sources */,
 				DE084602253A954000D245F5 /* NetworkAPIClient.swift in Sources */,
-				DED03FAD253A254700E9C759 /* SceneDelegate.swift in Sources */,
+				DE667DC0253AF2F70041709A /* PixaBayPhotoDetailRouter.swift in Sources */,
+				DE08462D253AB5F900D245F5 /* AppConfigurator.swift in Sources */,
+				DE667DC1253AF2F80041709A /* PixaBayPhotoDetailProtocols.swift in Sources */,
 				DE0845EA253A925600D245F5 /* UIImage+Extensions.swift in Sources */,
+				DE667DC3253AF2F80041709A /* PixabayPhotoDetailViewController.swift in Sources */,
+				DE08461D253AA22700D245F5 /* PixaBaySearchModuleBuilder.swift in Sources */,
+				DE084623253AA22700D245F5 /* PixaBayImageCell.swift in Sources */,
+				DE084620253AA22700D245F5 /* SearchViewController.swift in Sources */,
 				DE084603253A954000D245F5 /* APIEndPoint.swift in Sources */,
 				DE0845E9253A925600D245F5 /* UIView+Extensions.swift in Sources */,
+				DE08461A253AA22700D245F5 /* PixaBaySearchInteractor.swift in Sources */,
 				DED03FDE253A261C00E9C759 /* Reusable.swift in Sources */,
 				DE084600253A954000D245F5 /* PixaBaySearchAPI.swift in Sources */,
 			);
@@ -417,14 +601,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		DED03FB0253A254700E9C759 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DED03FB1253A254700E9C759 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		DED03FB5253A254B00E9C759 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

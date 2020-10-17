@@ -19,6 +19,7 @@ enum PixaBaySearchAPI: APIEndPoint, URLRequestConvertible {
 extension PixaBaySearchAPI {
     
     var baseURL: URL {
+
         return URL(string: APIConstants.pixabayAPIBaseURL)!
     }
     
@@ -27,7 +28,7 @@ extension PixaBaySearchAPI {
     }
     
     var path: String {
-        return "api/"
+        return "/api/"
     }
     
     var parameters: [String : Any] {
@@ -37,11 +38,8 @@ extension PixaBaySearchAPI {
                 "key": APIConstants.pixabayAPIKey,
                 "q": query,
                 "image_type":"photo",
-                "safe_search": 1,
                 "page": page,
-                "per_page": Constants.defaultPageSize,
-                "callback": "JSONP",
-                "pretty":"false"
+                "per_page": Constants.defaultPageSize
             ]
         }
     }
