@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DE0845E7253A925600D245F5 /* UIImageView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0845E3253A925600D245F5 /* UIImageView+Extensions.swift */; };
+		DE0845E8253A925600D245F5 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0845E4253A925600D245F5 /* UIViewController+Extensions.swift */; };
+		DE0845E9253A925600D245F5 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0845E5253A925600D245F5 /* UIView+Extensions.swift */; };
+		DE0845EA253A925600D245F5 /* UIImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0845E6253A925600D245F5 /* UIImage+Extensions.swift */; };
+		DE0845F8253A94FC00D245F5 /* ImageOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0845F6253A94FC00D245F5 /* ImageOperation.swift */; };
+		DE0845F9253A94FC00D245F5 /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0845F7253A94FC00D245F5 /* ImageDownloader.swift */; };
+		DE084600253A954000D245F5 /* PixaBaySearchAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0845FB253A954000D245F5 /* PixaBaySearchAPI.swift */; };
+		DE084601253A954000D245F5 /* URLRequestConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0845FC253A954000D245F5 /* URLRequestConvertible.swift */; };
+		DE084602253A954000D245F5 /* NetworkAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0845FD253A954000D245F5 /* NetworkAPIClient.swift */; };
+		DE084603253A954000D245F5 /* APIEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0845FE253A954000D245F5 /* APIEndPoint.swift */; };
+		DE084604253A954000D245F5 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0845FF253A954000D245F5 /* NetworkError.swift */; };
+		DE084607253A96B600D245F5 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE084606253A96B600D245F5 /* Constants.swift */; };
 		DED03FAB253A254700E9C759 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED03FAA253A254700E9C759 /* AppDelegate.swift */; };
 		DED03FAD253A254700E9C759 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED03FAC253A254700E9C759 /* SceneDelegate.swift */; };
 		DED03FAF253A254700E9C759 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED03FAE253A254700E9C759 /* ViewController.swift */; };
@@ -37,6 +49,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DE0845E3253A925600D245F5 /* UIImageView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extensions.swift"; sourceTree = "<group>"; };
+		DE0845E4253A925600D245F5 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
+		DE0845E5253A925600D245F5 /* UIView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		DE0845E6253A925600D245F5 /* UIImage+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Extensions.swift"; sourceTree = "<group>"; };
+		DE0845F6253A94FC00D245F5 /* ImageOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageOperation.swift; sourceTree = "<group>"; };
+		DE0845F7253A94FC00D245F5 /* ImageDownloader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
+		DE0845FB253A954000D245F5 /* PixaBaySearchAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PixaBaySearchAPI.swift; sourceTree = "<group>"; };
+		DE0845FC253A954000D245F5 /* URLRequestConvertible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLRequestConvertible.swift; sourceTree = "<group>"; };
+		DE0845FD253A954000D245F5 /* NetworkAPIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkAPIClient.swift; sourceTree = "<group>"; };
+		DE0845FE253A954000D245F5 /* APIEndPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIEndPoint.swift; sourceTree = "<group>"; };
+		DE0845FF253A954000D245F5 /* NetworkError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		DE084606253A96B600D245F5 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		DED03FA7253A254700E9C759 /* PixaBay Search.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PixaBay Search.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DED03FAA253A254700E9C759 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DED03FAC253A254700E9C759 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -80,6 +104,70 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DE0845E2253A925600D245F5 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				DE0845E3253A925600D245F5 /* UIImageView+Extensions.swift */,
+				DE0845E4253A925600D245F5 /* UIViewController+Extensions.swift */,
+				DE0845E5253A925600D245F5 /* UIView+Extensions.swift */,
+				DE0845E6253A925600D245F5 /* UIImage+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		DE0845EB253A929600D245F5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DED03FB3253A254B00E9C759 /* Assets.xcassets */,
+				DED03FB5253A254B00E9C759 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		DE0845F5253A94FC00D245F5 /* ImageDownloader */ = {
+			isa = PBXGroup;
+			children = (
+				DE0845F6253A94FC00D245F5 /* ImageOperation.swift */,
+				DE0845F7253A94FC00D245F5 /* ImageDownloader.swift */,
+			);
+			path = ImageDownloader;
+			sourceTree = "<group>";
+		};
+		DE0845FA253A954000D245F5 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				DE0845FB253A954000D245F5 /* PixaBaySearchAPI.swift */,
+				DE0845FC253A954000D245F5 /* URLRequestConvertible.swift */,
+				DE0845FD253A954000D245F5 /* NetworkAPIClient.swift */,
+				DE0845FE253A954000D245F5 /* APIEndPoint.swift */,
+				DE0845FF253A954000D245F5 /* NetworkError.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		DE084605253A96B600D245F5 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				DE084606253A96B600D245F5 /* Constants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		DE084608253A9DE100D245F5 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				DE084609253A9DEE00D245F5 /* PixaBay Search */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		DE084609253A9DEE00D245F5 /* PixaBay Search */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "PixaBay Search";
+			sourceTree = "<group>";
+		};
 		DED03F9E253A254700E9C759 = {
 			isa = PBXGroup;
 			children = (
@@ -103,14 +191,18 @@
 		DED03FA9253A254700E9C759 /* PixaBay Search */ = {
 			isa = PBXGroup;
 			children = (
+				DE084608253A9DE100D245F5 /* Modules */,
+				DED03FB8253A254B00E9C759 /* Info.plist */,
+				DE084605253A96B600D245F5 /* Constants */,
+				DE0845F5253A94FC00D245F5 /* ImageDownloader */,
+				DE0845EB253A929600D245F5 /* Resources */,
+				DE0845E2253A925600D245F5 /* Extensions */,
 				DED03FDA253A261B00E9C759 /* Protocols */,
 				DED03FAA253A254700E9C759 /* AppDelegate.swift */,
 				DED03FAC253A254700E9C759 /* SceneDelegate.swift */,
 				DED03FAE253A254700E9C759 /* ViewController.swift */,
 				DED03FB0253A254700E9C759 /* Main.storyboard */,
-				DED03FB3253A254B00E9C759 /* Assets.xcassets */,
-				DED03FB5253A254B00E9C759 /* LaunchScreen.storyboard */,
-				DED03FB8253A254B00E9C759 /* Info.plist */,
+				DE0845FA253A954000D245F5 /* Networking */,
 			);
 			path = "PixaBay Search";
 			sourceTree = "<group>";
@@ -273,11 +365,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE0845E7253A925600D245F5 /* UIImageView+Extensions.swift in Sources */,
+				DE084607253A96B600D245F5 /* Constants.swift in Sources */,
+				DE084604253A954000D245F5 /* NetworkError.swift in Sources */,
 				DED03FAF253A254700E9C759 /* ViewController.swift in Sources */,
 				DED03FDD253A261C00E9C759 /* UICollectionView+Reusable.swift in Sources */,
+				DE0845E8253A925600D245F5 /* UIViewController+Extensions.swift in Sources */,
 				DED03FAB253A254700E9C759 /* AppDelegate.swift in Sources */,
+				DE084601253A954000D245F5 /* URLRequestConvertible.swift in Sources */,
+				DE0845F8253A94FC00D245F5 /* ImageOperation.swift in Sources */,
+				DE0845F9253A94FC00D245F5 /* ImageDownloader.swift in Sources */,
+				DE084602253A954000D245F5 /* NetworkAPIClient.swift in Sources */,
 				DED03FAD253A254700E9C759 /* SceneDelegate.swift in Sources */,
+				DE0845EA253A925600D245F5 /* UIImage+Extensions.swift in Sources */,
+				DE084603253A954000D245F5 /* APIEndPoint.swift in Sources */,
+				DE0845E9253A925600D245F5 /* UIView+Extensions.swift in Sources */,
 				DED03FDE253A261C00E9C759 /* Reusable.swift in Sources */,
+				DE084600253A954000D245F5 /* PixaBaySearchAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
