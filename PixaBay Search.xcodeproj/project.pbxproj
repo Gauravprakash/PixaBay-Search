@@ -33,7 +33,6 @@
 		DE084628253AA29900D245F5 /* PixaBayPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE084626253AA29900D245F5 /* PixaBayPhoto.swift */; };
 		DE08462C253AB5F900D245F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE08462A253AB5F900D245F5 /* AppDelegate.swift */; };
 		DE08462D253AB5F900D245F5 /* AppConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE08462B253AB5F900D245F5 /* AppConfigurator.swift */; };
-		DE2E5A5F253B149400DFD7CD /* ISPageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2E5A5E253B149400DFD7CD /* ISPageControl.swift */; };
 		DE2E5A61253B3B3F00DFD7CD /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2E5A60253B3B3F00DFD7CD /* UIColor+Extensions.swift */; };
 		DE2E5A64253B406F00DFD7CD /* PIxaBay.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DE2E5A62253B406F00DFD7CD /* PIxaBay.xcdatamodeld */; };
 		DE2E5A66253B433900DFD7CD /* TagsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2E5A65253B433900DFD7CD /* TagsView.swift */; };
@@ -96,7 +95,6 @@
 		DE084626253AA29900D245F5 /* PixaBayPhoto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PixaBayPhoto.swift; sourceTree = "<group>"; };
 		DE08462A253AB5F900D245F5 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DE08462B253AB5F900D245F5 /* AppConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConfigurator.swift; sourceTree = "<group>"; };
-		DE2E5A5E253B149400DFD7CD /* ISPageControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ISPageControl.swift; sourceTree = "<group>"; };
 		DE2E5A60253B3B3F00DFD7CD /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
 		DE2E5A63253B406F00DFD7CD /* PIxaBay.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PIxaBay.xcdatamodel; sourceTree = "<group>"; };
 		DE2E5A65253B433900DFD7CD /* TagsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagsView.swift; sourceTree = "<group>"; };
@@ -292,7 +290,6 @@
 		DE2E5A5D253B148000DFD7CD /* Helper */ = {
 			isa = PBXGroup;
 			children = (
-				DE2E5A5E253B149400DFD7CD /* ISPageControl.swift */,
 				DE2E5A65253B433900DFD7CD /* TagsView.swift */,
 			);
 			path = Helper;
@@ -578,7 +575,6 @@
 				DE0845E8253A925600D245F5 /* UIViewController+Extensions.swift in Sources */,
 				DE2E5A66253B433900DFD7CD /* TagsView.swift in Sources */,
 				DE667DC2253AF2F80041709A /* PixaBayDetailModuleBuilder.swift in Sources */,
-				DE2E5A5F253B149400DFD7CD /* ISPageControl.swift in Sources */,
 				DE2E5A64253B406F00DFD7CD /* PIxaBay.xcdatamodeld in Sources */,
 				DE084622253AA22700D245F5 /* FooterView.swift in Sources */,
 				DE084601253A954000D245F5 /* URLRequestConvertible.swift in Sources */,

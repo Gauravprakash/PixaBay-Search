@@ -31,17 +31,6 @@ final class PixaBayPhotoDetailViewController: UIViewController, PixaBayPhotoDeta
            collectionView.translatesAutoresizingMaskIntoConstraints = false
            return collectionView
        }()
-    lazy var pageControlView:ISPageControl = {
-        let pageControl = ISPageControl(frame: CGRect(x: 0, y: 0, width: 50, height: 50), numberOfPages: arrayListing.count)
-        pageControl.backgroundColor = .red
-        pageControl.radius = 4
-        pageControl.padding = 3
-        pageControl.inactiveTintColor = UIColor(rgb: 0xDEDEDE)
-        pageControl.currentPageTintColor =  UIColor(rgb: 0x000000)
-        pageControl.borderWidth = 1;
-        pageControl.translatesAutoresizingMaskIntoConstraints = false
-        return pageControl
-    }()
     
     lazy var closeButton: UIButton = {
         let button = UIButton()
@@ -64,7 +53,6 @@ final class PixaBayPhotoDetailViewController: UIViewController, PixaBayPhotoDeta
     }
     
     private func setupViews() {
-        configurePageControl()
         configureCollectionView()
         view.addSubview(closeButton)
         setupConstraints()
@@ -75,23 +63,14 @@ final class PixaBayPhotoDetailViewController: UIViewController, PixaBayPhotoDeta
         view.addSubview(collectionView)
         collectionView.edgesToSuperView()
         collectionView.register(PixaBayImageCell.self)
-        //collectionView.register(FooterView.self, ofKind: UICollectionView.elementKindSectionFooter)
     }
     
-    //MARK: ConfigureISPageControl
-    private func configurePageControl() {
-        view.addSubview(pageControlView)
-    }
     
     
     fileprivate func setupConstraints() {
         collectionView.centerInSuperView()
         collectionView.widthAnchor.constraint(equalToConstant: Constants.screenWidth).isActive = true
         collectionView.heightAnchor.constraint(equalToConstant: Constants.screenWidth).isActive = true
-        pageControlView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant:  LayoutConstants.rightpadding).isActive = true
-        pageControlView.topAnchor.constraint(equalTo: view.topAnchor, constant: LayoutConstants.topPadding).isActive = true
-        pageControlView.widthAnchor.constraint(equalToConstant: LayoutConstants.buttonWidth).isActive = true
-        pageControlView.heightAnchor.constraint(equalToConstant: LayoutConstants.buttonWidth).isActive = true
         closeButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: LayoutConstants.rightpadding).isActive = true
         closeButton.topAnchor.constraint(equalTo: view.topAnchor, constant: LayoutConstants.topPadding).isActive = true
         closeButton.widthAnchor.constraint(equalToConstant: LayoutConstants.buttonWidth).isActive = true

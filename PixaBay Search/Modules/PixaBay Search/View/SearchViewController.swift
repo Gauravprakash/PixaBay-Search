@@ -10,6 +10,7 @@ import UIKit
 
 protocol PixaBaySearchEventDelegate: AnyObject {
     func didTapSearchBar(withText searchText: String)
+    func showTagsView(value:Bool)
 }
 
 final class SearchViewController: UIViewController, UISearchBarDelegate {
@@ -33,5 +34,12 @@ final class SearchViewController: UIViewController, UISearchBarDelegate {
         searchBar.text = text
         searchBar.resignFirstResponder()
         searchDelegate?.didTapSearchBar(withText: text)
+    }
+    
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        guard let _ = searchBar.text else {
+                   return
+        }
+        searchDelegate?.showTagsView(value: true)
     }
 }

@@ -190,6 +190,10 @@ final class PixaBaySearchViewController: UIViewController, PixaBaySearchViewInpu
         presenter.searchPixaBayPhotos(matching: searchText)
     }
     
+    func showTagsView(value: Bool) {
+        self.tagsView.isHidden = value
+    }
+    
 }
 
 
