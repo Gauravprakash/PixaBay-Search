@@ -298,6 +298,7 @@
 		DE2E5A67253B54E300DFD7CD /* DataStorage */ = {
 			isa = PBXGroup;
 			children = (
+				DE2E5A62253B406F00DFD7CD /* PIxaBay.xcdatamodeld */,
 				DE2E5A68253B557F00DFD7CD /* CoreDataManager.swift */,
 			);
 			path = DataStorage;
@@ -398,7 +399,6 @@
 				DE0845E2253A925600D245F5 /* Extensions */,
 				DED03FDA253A261B00E9C759 /* Protocols */,
 				DE0845FA253A954000D245F5 /* Networking */,
-				DE2E5A62253B406F00DFD7CD /* PIxaBay.xcdatamodeld */,
 			);
 			path = "PixaBay Search";
 			sourceTree = "<group>";
