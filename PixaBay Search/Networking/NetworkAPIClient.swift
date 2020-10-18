@@ -43,8 +43,7 @@ final class NetworkAPIClient: NetworkService {
             request = try endPoint.asURLRequest()
         } catch {
             completion(.failure(error as! NetworkError))
-            
-            return URLSessionDataTask()
+            return session.dataTask(with: URL(string: "")!)
         }
 
         let dataTask = session.dataTask(with: request) { (data, response, error) in
