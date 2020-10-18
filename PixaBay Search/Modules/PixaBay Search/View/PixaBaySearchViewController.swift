@@ -188,10 +188,7 @@ final class PixaBaySearchViewController: UIViewController, PixaBaySearchViewInpu
         ImageDownloader.shared.cancelAll()
         presenter.searchPixaBayPhotos(matching: searchText)
     }
-    
-    func showTagsView(value: Bool) {
-        self.tagsView.isHidden = !value
-    }
+  
     
 }
 
