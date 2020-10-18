@@ -37,7 +37,6 @@ final class PixaBaySearchViewController: UIViewController, PixaBaySearchViewInpu
     }()
     
     lazy var collectionView: UICollectionView = {
-//        let collectionView = UICollectionView(frame: CGRect(x: 0, y: (navigationController?.navigationBar.frame.size.height ?? 0.0) + 100 + 160, width: Constants.screenWidth, height: view.frame.size.height - (navigationController?.navigationBar.frame.size.height ?? 0.0) + 100 + 160), collectionViewLayout: collectionViewLayout)
         let collectionView = UICollectionView(frame: view.bounds, collectionViewLayout: collectionViewLayout)
         collectionView.backgroundColor = .white
         collectionView.dataSource = self
@@ -52,7 +51,7 @@ final class PixaBaySearchViewController: UIViewController, PixaBaySearchViewInpu
         let tagsView = TagsView(frame: frame)
         let titles = CoreDataManager.sharedManager.fetchAllTags()
         let tags = titles.map { button(with: $0) }
-        tagsView.backgroundColor = .white
+        tagsView.backgroundColor = .clear
         tagsView.create(cloud: tags)
         return tagsView
     }()
@@ -191,7 +190,7 @@ final class PixaBaySearchViewController: UIViewController, PixaBaySearchViewInpu
     }
     
     func showTagsView(value: Bool) {
-        self.tagsView.isHidden = value
+        self.tagsView.isHidden = !value
     }
     
 }

@@ -50,16 +50,16 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "C90534ED-642B-4F64-97C7-EF5F7A0FFB5F"
+            uuid = "C9547452-F944-4D2D-B6E4-04F9FE8D05C6"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "PixaBay Search/Modules/PixaBay Search/View/PixaBaySearchViewController.swift"
+            filePath = "PixaBay Search/Modules/PixaBay Search/View/SearchViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "200"
-            endingLineNumber = "200"
-            landmarkName = "collectionView(_:numberOfItemsInSection:)"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "viewDidLoad()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

@@ -43,6 +43,7 @@ final class NetworkAPIClient: NetworkService {
             request = try endPoint.asURLRequest()
         } catch {
             completion(.failure(error as! NetworkError))
+            
             return URLSessionDataTask()
         }
 
