@@ -95,7 +95,7 @@ class CoreDataManager {
         let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "Search")
         do {
                let tags = try managedContext.fetch(fetchRequest)
-            if let manageObject = tags.first, tags.count == 5{
+            if let manageObject = tags.first, tags.count == 10{
                 managedContext.delete(manageObject)
             }
             do {
