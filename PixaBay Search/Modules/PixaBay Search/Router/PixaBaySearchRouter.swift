@@ -14,7 +14,7 @@ final class PixaBaySearchRouter: PixaBaySearchRouterInput {
    
     weak var viewController: UIViewController?
     
-    func showPixaBayPhotoDetails(with imageUrl: URL) {
+    func showPixaBayPhotoDetails(with imageUrl: [URL]) {
         let detailVC =  PixaBayPhotoDetailModuleBuilder().buildModule(with: imageUrl)
         viewController?.present(detailVC, animated: true)
     }

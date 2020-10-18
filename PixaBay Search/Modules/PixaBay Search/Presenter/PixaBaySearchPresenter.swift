@@ -27,7 +27,6 @@ final class PixaBaySearchPresenter: PixaBaySearchModuleInput, PixaBaySearchViewO
             return true
         }
         return totalDisplayingData < totalCount
-        // return pageNum < totalPages
     }
     
     //MARK: PixaBaySearchViewOutput
@@ -39,8 +38,11 @@ final class PixaBaySearchPresenter: PixaBaySearchModuleInput, PixaBaySearchViewO
     }
     
     func didSelectPhoto(at index: Int) {
-        let imageUrl = pixabaySearchViewModel.imageUrlAt(index)
-        router.showPixaBayPhotoDetails(with: imageUrl)
+        var imageArray = [URL]()
+        for i in index..<pixabaySearchViewModel.photoUrlList.count{
+            imageArray.append(pixabaySearchViewModel.photoUrlList[i])
+        }
+        router.showPixaBayPhotoDetails(with: imageArray)
     }
     
     //MARK: Photo Search Success

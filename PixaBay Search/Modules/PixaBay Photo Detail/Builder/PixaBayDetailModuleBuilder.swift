@@ -8,12 +8,12 @@
 import Foundation
 
 protocol PixaBayDetailModuleBuilder {
-    func buildModule(with imageUrl: URL) -> PixaBayPhotoDetailViewController
+    func buildModule(with imageUrl:[URL]) -> PixaBayPhotoDetailViewController
 }
 
 final class PixaBayPhotoDetailModuleBuilder: PixaBayDetailModuleBuilder {
     
-    func buildModule(with imageUrl: URL) -> PixaBayPhotoDetailViewController {
+    func buildModule(with imageUrl: [URL]) -> PixaBayPhotoDetailViewController {
         
         let detailViewController = PixaBayPhotoDetailViewController()
         let presenter = PixaBayPhotoDetailPresenter(imageUrl: imageUrl)

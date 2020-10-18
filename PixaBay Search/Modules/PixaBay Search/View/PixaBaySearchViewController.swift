@@ -37,12 +37,24 @@ final class PixaBaySearchViewController: UIViewController, PixaBaySearchViewInpu
     }()
     
     lazy var collectionView: UICollectionView = {
+//        let collectionView = UICollectionView(frame: CGRect(x: 0, y: (navigationController?.navigationBar.frame.size.height ?? 0.0) + 100 + 160, width: Constants.screenWidth, height: view.frame.size.height - (navigationController?.navigationBar.frame.size.height ?? 0.0) + 100 + 160), collectionViewLayout: collectionViewLayout)
         let collectionView = UICollectionView(frame: view.bounds, collectionViewLayout: collectionViewLayout)
         collectionView.backgroundColor = .white
         collectionView.dataSource = self
         collectionView.delegate = self
         collectionView.translatesAutoresizingMaskIntoConstraints = false
         return collectionView
+    }()
+    
+    lazy var tagsView:TagsView = {
+        
+        let frame = CGRect(x: view.frame.origin.x, y:(navigationController?.navigationBar.frame.size.height ?? 0.0) + 100, width: Constants.screenWidth, height: 160)
+        let tagsView = TagsView(frame: frame)
+        let titles = CoreDataManager.sharedManager.fetchAllTags()
+        let tags = titles.map { button(with: $0) }
+        tagsView.backgroundColor = .white
+        tagsView.create(cloud: tags)
+        return tagsView
     }()
     
     lazy var searchController: UISearchController = {
@@ -60,6 +72,28 @@ final class PixaBaySearchViewController: UIViewController, PixaBaySearchViewInpu
         return controller
     }()
     
+    private func button(with title: String) -> UIButton {
+        let font = UIFont.preferredFont(forTextStyle: .headline)
+        let attributes: [NSAttributedString.Key: Any] = [.font: font]
+        let size = title.size(withAttributes: attributes)
+
+        let button = UIButton(type: .custom)
+        button.setTitle(title, for: .normal)
+        button.titleLabel?.font = font
+        button.setTitleColor(.darkGray, for: .normal)
+        button.layer.borderWidth = 1.0
+        button.layer.cornerRadius = size.height / 2
+        button.layer.borderColor = UIColor.darkGray.cgColor
+        button.frame = CGRect(x: 0.0, y: 0.0, width: size.width + 10.0, height: size.height + 10.0)
+        button.titleEdgeInsets = UIEdgeInsets(top: 0.0, left: 5.0, bottom: 0.0, right: 5.0)
+        button.addTarget(self, action: #selector(loadTags), for: .touchUpInside)
+        return button
+    }
+    
+    @objc func loadTags(sender:UIButton){
+        searchController.searchBar.text = sender.titleLabel?.text
+    }
+    
     //MARK: ViewController Lifecycle
     override func loadView() {
         view = UIView()
@@ -75,7 +109,14 @@ final class PixaBaySearchViewController: UIViewController, PixaBaySearchViewInpu
     private func setupViews() {
         configureCollectionView()
         configureSearchController()
+        configureTagsView()
+        
     }
+    
+    //MARK: configureTagsView
+       private func configureTagsView() {
+           view.addSubview(tagsView)
+       }
     
     //MARK: configureSearchController
     private func configureSearchController() {
@@ -141,7 +182,8 @@ final class PixaBaySearchViewController: UIViewController, PixaBaySearchViewInpu
         searchController.isActive = false
         guard !searchText.isEmpty || searchText != self.searchText else { return }
         presenter.clearData()
-        
+        CoreDataManager.sharedManager.insertTag(name: searchText)
+        tagsView.isHidden = true
         self.searchText = searchText
         searchController.searchBar.text = searchText
         ImageDownloader.shared.cancelAll()
@@ -206,8 +248,10 @@ extension PixaBaySearchViewController: UICollectionViewDataSource, UICollectionV
         }
     }
     
+    
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         presenter.didSelectPhoto(at: indexPath.item)
     }
 }
+
 

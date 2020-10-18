@@ -13,9 +13,10 @@ final class PixaBayPhotoDetailPresenter: PixaBayPhotoDetailModuleInput, PixaBayP
     var view: PixaBayPhotoDetailViewInput?
     var router: PixaBayPhotoDetailRouterInput!
     
-    var imageUrl: URL
+    //var imageUrl: URL
+    var imageUrl: [URL]
     
-    init(imageUrl: URL) {
+    init(imageUrl: [URL]) {
         self.imageUrl = imageUrl
     }
     

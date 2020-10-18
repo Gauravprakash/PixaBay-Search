@@ -64,6 +64,6 @@ protocol PixaBaySearchInteractorInput: AnyObject {
 
 //MARK: Router
 protocol PixaBaySearchRouterInput: AnyObject {
-    func showPixaBayPhotoDetails(with imageUrl: URL)
+    func showPixaBayPhotoDetails(with imageUrl: [URL])
 }
 

@@ -10,7 +10,7 @@ import UIKit
 
 
 protocol PixaBayPhotoDetailViewInput: BaseViewInput {
-    func renderView(with imageUrl: URL)
+   func renderView(with imageUrl: [URL])
 }
 
 protocol PixaBayPhotoDetailViewOutput: AnyObject {
